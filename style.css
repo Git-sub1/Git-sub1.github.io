@@ -73,6 +73,39 @@ main {
     color: #555;
 }
 
+/* Section navigation (anchors to parts) */
+.section-nav {
+  max-width: 900px;
+  margin: 16px auto 0;
+  padding: 0 20px;
+  display: flex;
+  gap: 16px;
+}
+.section-nav a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+.section-nav a:hover { text-decoration: underline; }
+
+/* Divider between parts */
+.section-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 32px 0;
+}
+
+/* Pager links at the bottom of a section */
+.pager {
+  margin-top: 20px;
+}
+.pager a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+.pager a:hover { text-decoration: underline; }
+
 /* Footer */
 footer {
     text-align: center;
