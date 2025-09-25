@@ -36,24 +36,30 @@ nav a:hover {
 
 /* Main Content */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 20px;
+    line-height: 1.6;
 }
 
-/* Links (inside content, not nav) */
-a {
-    display: inline-block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #0073e6;
-    font-weight: bold;
-    transition: color 0.2s ease-in-out;
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   /* allows wrapping on smaller screens */
+    gap: 20px;         /* spacing between images */
+    margin-top: 20px;
 }
 
-a:hover {
-    color: #005bb5;
-    text-decoration: underline;
+.image-gallery img {
+    max-width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);  /* zoom effect on hover */
 }
 
 /* Footer */
